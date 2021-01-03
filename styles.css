@@ -17,7 +17,7 @@
         */
 
 .carousel {
-  max-width: 900px;
+  max-width: 600px;
   position: relative;
 }
 
@@ -41,6 +41,7 @@
 
 .carousel .carousel-item-visible {
   display: block;
+  animation: fadeVisibility 1s;
 }
 
 button {
@@ -58,4 +59,13 @@ button {
 
 button:hover {
   background-color: rgba(255, 255, 255, 1);
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
